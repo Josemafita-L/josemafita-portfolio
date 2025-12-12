@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josemafita L | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Josemafita L</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+        <div class="content fade-in">
+            <h1>Hello, I'm <span class="highlight">Josemafita L</span></h1>
+            <h2 class="tagline">Aspiring full-stack developer crafting efficient, scalable, and user-focused web solutions.</h2>
+            <p>A developer passionate about building intuitive UI and robust backend systems.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            A pre-final year Computer Science Engineering student with a strong interest in full-stack development.  
+            I enjoy creating interactive UI experiences, developing backend APIs, and continuously learning new technologies.
+        </p>
+
+        <div class="skills-container">
+            <div class="skill-card slide-up">
+                <h3>Programming Languages</h3>
+                <p>Java, C, C++, Basic Python</p>
+            </div>
+            <div class="skill-card slide-up">
+                <h3>Technologies</h3>
+                <p>HTML, CSS, JavaScript, React.js</p>
+            </div>
+            <div class="skill-card slide-up">
+                <h3>Databases</h3>
+                <p>MySQL, MongoDB</p>
+            </div>
+            <div class="skill-card slide-up">
+                <h3>Tools</h3>
+                <p>VS Code, Postman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects section">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- FULL-STACK & HARDWARE PROJECTS -->
+        <h3 class="project-category">Full-Stack & Hardware Projects</h3>
+
+        <div class="project-card fade-in">
+            <h4>Campus Grievance Management System</h4>
+            <p>React.js · Node.js · REST API · MySQL</p>
+            <p>A full-stack web application for submitting and tracking student grievances.</p>
+            <button class="view-btn" onclick="openModal(1)">View Details</button>
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal(1)">&times;</span>
+                    <h2>Campus Grievance Management System</h2>
+                    <ul>
+                        <li>React.js based responsive frontend.</li>
+                        <li>REST APIs built using Node.js & Express.</li>
+                        <li>MySQL backend with secure data handling.</li>
+                        <li>Postman used for endpoint validation.</li>
+                        <li>Role-based access for admin & students.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <h4>Live Occupancy Tracking System</h4>
+            <p>Hardware Project</p>
+            <p>Real-time human occupancy counter using sensors.</p>
+            <button class="view-btn" onclick="openModal(2)">View Details</button>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal(2)">&times;</span>
+                    <h2>Live Occupancy Tracking System</h2>
+                    <ul>
+                        <li>Counts people entering and exiting a room.</li>
+                        <li>Uses photoelectric sensors and microcontroller.</li>
+                        <li>Real-time display with warning alerts.</li>
+                        <li>Useful for classrooms, labs, and halls.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <h4>Virtual Typing System (In Progress)</h4>
+            <p>Python · JavaScript · MediaPipe · OpenCV</p>
+            <p>Eye-gaze-based virtual typing interface.</p>
+            <button class="view-btn" onclick="openModal(3)">View Details</button>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal(3)">&times;</span>
+                    <h2>Virtual Typing System</h2>
+                    <ul>
+                        <li>Assistive interface for communication-disabled users.</li>
+                        <li>Uses OpenCV + MediaPipe for gaze tracking.</li>
+                        <li>Hands-free typing system.</li>
+                        <li>Accurate real-time eye detection.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MINI PROJECTS -->
+        <h3 class="project-category">Frontend Projects</h3>
+
+        <div class="project-card fade-in">
+            <h4>Senthoron Cafe</h4>
+            <p>HTML · CSS · JavaScript</p>
+            <p>A modern, responsive cafe website showcasing menu and gallery.</p>
+            <button class="view-btn" onclick="openModal(4)">View Details</button>
+            <a href="https://Josemafita-L.github.io/Senthuron_cafe/" target="_blank" class="live-btn">Live Demo</a>
+
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal(4)">&times;</span>
+                    <h2>Senthoron Cafe</h2>
+                    <ul>
+                        <li>Responsive layout using HTML, CSS & JavaScript.</li>
+                        <li>Interactive menu and gallery.</li>
+                        <li>Optimized for mobile and desktop view.</li>
+                        <li>Clean and modern UI design.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <h4>Humble.co (Environment Friendly Shop)</h4>
+            <p>HTML · CSS · JavaScript</p>
+            <p>Website for an eco-friendly shop focusing on sustainability.</p>
+            <button class="view-btn" onclick="openModal(5)">View Details</button>
+            <a href="https://josemafita-l.github.io/Internship/" target="_blank" class="live-btn">Live Demo</a>
+
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal(5)">&times;</span>
+                    <h2>Humble.co</h2>
+                    <ul>
+                        <li>Frontend-focused project with responsive design.</li>
+                        <li>Showcases eco-friendly products and philosophy.</li>
+                        <li>Interactive navigation and user-friendly layout.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <p>Email: <a href="mailto:josemafita.l@gmail.com">josemafita.l@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/josemafita-l-cse-4579a4294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/Josemafita-L" target="_blank">GitHub Profile</a></p>
+                <p>Mobile: +91 7010257640</p>
+            </div>
+
+            <form class="contact-form" onsubmit="return submitForm();">
+                <h3>Send Me a Message</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Josemafita L | Portfolio</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/josemafita/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/josemafita" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
